@@ -1,0 +1,53 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+        
+    <a style="color: white;padding: 20px;" class="navbar-brand" href="#">Serenity Hospitals</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+            <a style="color: white;"class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/admin">Back</a>
+          
+            <li class="nav-item">
+              <a style="color: white;"class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/create-appointment">Add Appointments</a>
+          </ul>
+
+      
+    </div>
+</nav>
+
+<div class="container">
+<hr>
+
+
+<h2>Appointment List</h2>
+<a style="color: rgb(86, 86, 86); font-size: x-large;">Welcome to Appointment list page. Click Add Appointments to Add appointments</a>
+  <hr>
+<table class="table table-striped">
+    <thead class="table-header">
+        <tr>
+            <th> ID </th>
+            <th> Patient Name </th>
+            <th> Contact </th>
+            <th> Doctor Name </th>
+            <th> Appointment Date </th>
+            <th> Appointment Time </th>
+            <th> Status </th>
+            <th>  </th>
+            
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let appointment of appointments">
+            <td> {{ appointment.appointmentID }} </td>
+            <td> {{ appointment.patient?.fname }} </td>
+            <td> {{ appointment.patient?.contact }} </td>
+            <td> {{ appointment.doctor?.name }} </td>
+            <td> {{ appointment.appointmentDate }} </td>
+            <td> {{ appointment.appointmentTime }} </td>
+            <td> {{ appointment.status }} </td>
+
+            <td>

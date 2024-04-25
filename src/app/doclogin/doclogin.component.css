@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  form {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px; /* Adjust width as needed */
+  }
+  
+  .form-label {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    border: 1px solid #ced4da; /* Gray border */
+    border-radius: 5px;
+  }
+  
+  .btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  .btn-success {
+    background-color: #f545c9; /* pink button */
+    color: white;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838; /* Dark green hover */
+  }
+  
+  .btn-warning {
+    background-color: #ffc107; /* Yellow button */
+    color: #212529;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e0a800; /* Dark yellow hover */
+  }
+  
+  

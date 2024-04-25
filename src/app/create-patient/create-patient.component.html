@@ -1,0 +1,54 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">      
+    <a style="color: white;" class="navbar-brand" href="#">APOLLO HOSPITALS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">    
+        <li class="nav-item">
+          <a style="color: white;"class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/docdash">Back</a>
+        </li>
+      </ul>          
+    </div>  
+</nav>
+
+<div class="container">
+  <hr>
+  
+  <div class="col-md-6-offset-md-3">
+    <h2>Add New Patient</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" name="fname" [(ngModel)]="patient.fname" placeholder="Enter First Name">
+      </div>
+
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" name="lname" [(ngModel)]="patient.lname" placeholder="Enter Last Name">
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <input type="text" class="form-control" name="gender" [(ngModel)]="patient.gender" placeholder="Enter Gender">
+      </div>
+
+      <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="text" class="form-control" name="dateOfBirth" [(ngModel)]="patient.dateOfBirth">
+      </div>
+
+      <div class="form-group">
+        <label>Blood Group</label>
+        <input type="text" class="form-control" name="bloodgroup" [(ngModel)]="patient.bloodgroup" placeholder="Enter Blood Group">
+      </div>
+
+      <div class="form-group">
+        <label>Contact</label>
+        <input type="text" class="form-control" name="contact" [(ngModel)]="patient.contact" placeholder="Enter Contact">
+      </div>
+
+      <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
